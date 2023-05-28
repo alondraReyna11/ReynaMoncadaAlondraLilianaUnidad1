@@ -1,3 +1,6 @@
+<? php
+require_once 'cdn.html'
+>
 <!DOCTYPE html>
 <html lang="en">
 <head>
