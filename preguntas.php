@@ -80,7 +80,7 @@ include 'cnn.php';
           <a class="nav-link" href="preguntas.php"><i class="far fa-circle-question"></i></a>
         </li>
         <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="salir.php"><i class="fas fa-arrow-right-to-bracket"></i></a>
+          <a class="nav-link" href="#" onclick="cerrarSesion()"><i class="fas fa-arrow-right-to-bracket"></i></a>
         </li>
       </ul>
     </div>
