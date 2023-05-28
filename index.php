@@ -1,5 +1,5 @@
 <? php
-require_once 'cdn.html'
+require_once 'cdn.html';
 >
 <!DOCTYPE html>
 <html lang="en">
