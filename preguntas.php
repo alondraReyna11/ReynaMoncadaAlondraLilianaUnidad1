@@ -1,4 +1,5 @@
 <?php
+<?php
 session_start();
 require_once 'cdn.html';
 include 'cnn.php';
@@ -66,6 +67,11 @@ include 'cnn.php';
       </ul>
 
       <!-- Icons -->
+      <form class="d-none d-md-flex input-group w-auto my-auto">
+        <input autocomplete="off" type="search" class="form-control rounded" placeholder='Busqueda'
+          style="min-width: 225px" />
+        <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+      </form>
       <ul class="navbar-nav d-flex flex-row me-1">
         <li class="nav-item me-3 me-lg-0">
           <a class="nav-link" href="inicio.php"><i class="fas fa-house"></i>INICIO</a>
@@ -80,7 +86,7 @@ include 'cnn.php';
           <a class="nav-link" href="preguntas.php"><i class="far fa-circle-question"></i></a>
         </li>
         <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="#" onclick="cerrarSesion()"><i class="fas fa-arrow-right-to-bracket"></i></a>
+          <a class="nav-link" href="logout.php"> SALIR<i class="fas fa-arrow-right-to-bracket"></i></a>
         </li>
       </ul>
     </div>
@@ -91,7 +97,12 @@ include 'cnn.php';
 <br>
 <div class="row">
   <div class="col-md-1"></div>
-  <div class="col-md-10"><h1><center>Preguntas Frecuentes <i class="fas fa-question"></i></center></h1></div>
+  <div class="col-md-10"><h1><center>Preguntas Frecuentes <img
+          src="img/ayudar.png"
+          height="40"
+          alt="MDB Logo"
+          loading="lazy"
+        /></i></center></h1></div>
   <div class="col-md-1"></div>
 </div>  
 <hr>
@@ -239,7 +250,7 @@ de seguridad para garantizar la confidencialidad y seguridad de tu información.
   </div>
 </div></div>
 </div>  
-</body>
+
 <BR></BR>
 <!-- Footer -->
 <br>
@@ -271,18 +282,137 @@ de seguridad para garantizar la confidencialidad y seguridad de tu información.
 
 
   </div>
+ 
+  <!-- Copyright -->
+  <footer class="text-center text-white bg-dark" style="background-color: #caced1;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Images -->
+    <section class="">
+      <div class="row">
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+              class="w-100"
+              
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+              class="w-100"
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+              class="w-100"
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+              class="w-100"
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+              class="w-100"
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+              class="w-100"
+            />
+            <a href="#!">
+              <div
+                class="mask"
+                style="background-color: rgba(251, 251, 251, 0.2);"
+              ></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Images -->
+  </div>
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © YABtravel Agencia de viajes
-   2023
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" >  YABtravel Agencia de viajes
+   </a>
   </div>
   <!-- Copyright -->
-
+</footer>
+  </body>
 </footer>
 <!-- Footer -->
 </html>
+
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
